@@ -190,7 +190,7 @@ p{
     font-size: 14px;
 }
 
-.items{
+/* .items{
     background-color: green;
     overflow: hidden;
 }
@@ -198,7 +198,7 @@ p{
 .item{
     float: left;
     width: 20%;
-}
+} */
 
 .best_sellers{
     background-color: #dcdcdc94;
@@ -345,4 +345,20 @@ p{
 
 .drop_shadow img{
     filter:drop-shadow( 10px 10px 10px rgb(0,0,0,0.4) );
+}
+
+.items_test{
+    background: red;
+    width: 800px;
+    height: 800px;
+    position: relative;
+}
+
+.item_test{
+    background: teal;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
 }
