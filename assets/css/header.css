@@ -35,7 +35,7 @@ body{
     padding: 21.84px 0;
     position: fixed;
     width: 100%;
-    background-color: rgb(91, 73, 73);
+    background-color: rgb(255, 255, 255);
     z-index: 9;
 }
 
@@ -79,6 +79,25 @@ body{
 
 .icons a{
     cursor: pointer;
+}
+
+.icons .shopping_icon a{
+    position: relative;
+}
+
+.icons .shopping_icon a::after{
+    content: '3';
+    background-color: red;
+    position: absolute;
+    top: -14px;
+    left: 8px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-top-left-radius: 10px;  */
+    border-radius: 10px;
 }
 
 .hero{
@@ -231,6 +250,21 @@ p{
     padding: 10px;
 }
 
+h2{
+    position: relative;
+}
+
+h2::after{
+    content: '';
+    width: 300px;
+    height: 5px;
+    background-color: teal;
+    display: block;
+    position: absolute;
+    left: 40%;
+    top: 100%;
+}
+
 .best_sellers h2{
     font-size: 30px;
     font-weight: 700;
@@ -317,4 +351,20 @@ p{
 
 .drop_shadow img{
     filter:drop-shadow( 10px 10px 10px rgb(0,0,0,0.4) );
+}
+
+
+.soso h2::after{
+    content: "test";
+    background-color: red;
+    padding: 5px;
+}
+
+.soso h4::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #333;
+  margin: 10px 0;
 }
